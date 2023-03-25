@@ -1,4 +1,5 @@
-
+<!-- php -S localhost:8000をコマンドに入力 -->
+<!-- http://localhost:8000/にアクセス -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -7,15 +8,12 @@
     <title>文字列の出力</title>
     <body>
         <?php
-            echo 'Hello World';
+            echo 5+7;
         ?>
         <br>
         <?php
-            echo 4*7;
+            echo '5+7';
         ?>
         <br>
-        <?php
-            echo 8%3;
-        ?>
     </body>
 </html>
