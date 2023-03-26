@@ -8,13 +8,30 @@
     <title>文字列の出力</title>
     <body>
         <?php
-            $name = 'かえで';
-            echo $name;
+            $x = 0;
+            $y = 10;
+            $a = 8;
+            $b = 4;
         ?>
         <br>
         <?php
-            $sum = 4+9;
-            echo $sum;
+            $x += 4;
+            echo $x;
+        ?>
+        <br>
+        <?php
+            $y += $x;
+            echo $y;
+        ?>
+        <br>
+        <?php
+            $x++;
+            echo $a;
+        ?>
+        <br>
+        <?php
+            $b--;
+            echo $b;
         ?>
         <br>
     </body>
