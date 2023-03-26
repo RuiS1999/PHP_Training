@@ -8,13 +8,13 @@
     <title>文字列の出力</title>
     <body>
         <?php
-            // 文字列はピリオド(.)で連結
-            $name = '楓';
-            $hello = 'こんにちは';
+            $sum = 10*10;
+            if ($sum <= 900 ) {
+                echo 'good!';
+            }
         ?>
         <br>
         <?php
-            echo $name.$hello;
         ?>
         <br>
     </body>
