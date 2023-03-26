@@ -8,9 +8,13 @@
     <title>文字列の出力</title>
     <body>
         <?php
-            $sum = 10*10;
-            if ($sum <= 900 ) {
-                echo 'good!';
+            $sum = 1*10;
+            if ($sum <= 10 ) {
+                echo '10以下';
+            } elseif ($sum >10 && $sum <= 99) {
+                echo '11以上99以下';
+            } else {
+                echo '100以上';
             }
         ?>
         <br>
