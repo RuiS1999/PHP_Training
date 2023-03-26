@@ -8,15 +8,34 @@
     <title>文字列の出力</title>
     <body>
         <?php
-            //条件否定文を用いる際は
-            // if (!(条件分)) {}
-            $sum = 1*9;
-            if (!($sum > 10 )) {
-                echo '10未満';
+            $coin = 1;
+        ?>
+        <?php
+            if ($coin == 0) {
+                echo '表です';
+            } elseif ($coin == 1) {
+                echo '裏です';
+            } else {
+                echo 'コインがたった!?';
             }
         ?>
         <br>
         <?php
+            $coin = 3;
+        ?>
+        <?php
+            switch ($coin) {
+                case 0:
+                    echo '表です';
+                    break;
+                case 1:
+                    echo '裏です';
+                    break;
+                // else = default
+                default:
+                    echo 'コインがたった!?';
+                    break;
+            }
         ?>
         <br>
     </body>
