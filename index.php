@@ -8,11 +8,13 @@
     <title>文字列の出力</title>
     <body>
         <?php
-            echo 5+7;
+            $name = 'かえで';
+            echo $name;
         ?>
         <br>
         <?php
-            echo '5+7';
+            $sum = 4+9;
+            echo $sum;
         ?>
         <br>
     </body>
