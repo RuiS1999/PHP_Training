@@ -8,35 +8,18 @@
     <title>文字列の出力</title>
     <body>
         <?php
-            $coin = 1;
-        ?>
-        <?php
-            if ($coin == 0) {
-                echo '表です';
-            } elseif ($coin == 1) {
-                echo '裏です';
-            } else {
-                echo 'コインがたった!?';
-            }
+            $names = array('Kaede', 'Natsuki', 'Sakura');
+            echo $names[1];
         ?>
         <br>
         <?php
-            $coin = 3;
-        ?>
-        <?php
-            switch ($coin) {
-                case 0:
-                    echo '表です';
-                    break;
-                case 1:
-                    echo '裏です';
-                    break;
-                // else = default
-                default:
-                    echo 'コインがたった!?';
-                    break;
-            }
+            $names[] = 'Kyouka';
+            echo $names[3];
         ?>
         <br>
+        <?php
+            $names[1] = 'Momiji';
+            echo $names[1];
+        ?>
     </body>
 </html>
