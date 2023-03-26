@@ -8,18 +8,15 @@
     <title>文字列の出力</title>
     <body>
         <?php
-            $scores = array(
-                '国語' => 80,
-                '数学' => 78,
-                '生物' => 95,
-                '社会' => 68
-            );
-            echo $scores['国語'];
+            for ($x = 1; $x < 10; $x++) {
+                for ($y = 1; $y <10; $y++) {
+                    echo $x*$y.' ';
+                }
+                echo "<br/>\n";
+            }
         ?>
         <br>
         <?php
-            $scores['国語'] += 8;
-            echo '更新後: '.$scores['国語'];
         ?>
         <br>
         <?php
