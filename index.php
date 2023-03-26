@@ -8,18 +8,21 @@
     <title>文字列の出力</title>
     <body>
         <?php
-            $names = array('Kaede', 'Natsuki', 'Sakura');
-            echo $names[1];
+            $scores = array(
+                '国語' => 80,
+                '数学' => 78,
+                '生物' => 95,
+                '社会' => 68
+            );
+            echo $scores['国語'];
         ?>
         <br>
         <?php
-            $names[] = 'Kyouka';
-            echo $names[3];
+            $scores['国語'] += 8;
+            echo '更新後: '.$scores['国語'];
         ?>
         <br>
         <?php
-            $names[1] = 'Momiji';
-            echo $names[1];
         ?>
     </body>
 </html>
