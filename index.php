@@ -8,11 +8,11 @@
     <title>文字列の出力</title>
     <body>
         <?php
-            for ($x = 1; $x < 10; $x++) {
-                for ($y = 1; $y <10; $y++) {
-                    echo $x*$y.' ';
-                }
-                echo "<br/>\n";
+            $x = 0;
+            while ($x < 100) {
+                echo $x;
+                echo '<br>';
+                $x++;
             }
         ?>
         <br>
