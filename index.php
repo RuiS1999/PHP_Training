@@ -8,15 +8,12 @@
     <title>文字列の出力</title>
     <body>
         <?php
-            $x = 0;
-            while ($x < 100) {
-                echo $x;
-                echo '<br>';
-                $x++;
-                if ($x == 20) {
-                    echo '処理を終了します';
-                    continue;
-                }
+            $date = array('Kaede' => 'White',
+                'Hinata' => 'Yellow',
+                'Momiji' => 'Red'
+            );
+            foreach ($date as $name => $color) {
+                echo $name.':'.$color.'<br>';
             }
         ?>
         <br>
