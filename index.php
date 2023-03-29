@@ -15,7 +15,7 @@
                 $x++;
                 if ($x == 20) {
                     echo '処理を終了します';
-                    break;
+                    continue;
                 }
             }
         ?>
