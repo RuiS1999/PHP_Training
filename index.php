@@ -19,6 +19,7 @@
         ?>
         <br>
         <?php
+            echo rand(10, 90);
         ?>
     </body>
 </html>
