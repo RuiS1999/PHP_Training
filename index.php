@@ -8,18 +8,25 @@
     <title>文字列の出力</title>
     <body>
         <?php
-            $language = 'PHP';
-            echo $language.'<br>';
-            echo '文字数は'.strlen($language);
+            $radius1 = 3;
+            echo $radius1 * $radius1 * 3;
+            $radius2 = 5;
+            echo $radius2 * $radius2 * 3;
         ?>
         <br>
         <?php
-            $date = array('Hinata', 'Asuka', 'Kaede');
-            echo count($date);
+            function printCircleArea($radius) {
+                echo $radius * $radius * 3;
+            }
+            printCircleArea(3);
+            printCircleArea(5);
         ?>
         <br>
         <?php
-            echo rand(10, 90);
+            function hello() {
+                echo 'Hello World';
+            }
+            echo hello();
         ?>
     </body>
 </html>
