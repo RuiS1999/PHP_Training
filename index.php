@@ -11,10 +11,11 @@
             $language = 'PHP';
             echo $language.'<br>';
             echo '文字数は'.strlen($language);
-
         ?>
         <br>
         <?php
+            $date = array('Hinata', 'Asuka', 'Kaede');
+            echo count($date);
         ?>
         <br>
         <?php
