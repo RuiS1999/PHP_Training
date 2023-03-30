@@ -8,13 +8,10 @@
     <title>文字列の出力</title>
     <body>
         <?php
-            $date = array('Kaede' => 'White',
-                'Hinata' => 'Yellow',
-                'Momiji' => 'Red'
-            );
-            foreach ($date as $name => $color) {
-                echo $name.':'.$color.'<br>';
-            }
+            $language = 'PHP';
+            echo $language.'<br>';
+            echo '文字数は'.strlen($language);
+
         ?>
         <br>
         <?php
