@@ -8,18 +8,15 @@
     <title>文字列の出力</title>
     <body>
         <?php
-            $radius1 = 3;
-            echo $radius1 * $radius1 * 3;
-            $radius2 = 5;
-            echo $radius2 * $radius2 * 3;
         ?>
         <br>
         <?php
-            function printCircleArea($radius) {
-                echo $radius * $radius * 3;
+            function printCircleArea($radius1, $radius2) {
+                echo $radius1 * $radius2 / 2;
+                echo '<br>';
             }
-            printCircleArea(3);
-            printCircleArea(5);
+            printCircleArea(3, 5);
+            printCircleArea(5, 10);
         ?>
         <br>
         <?php
