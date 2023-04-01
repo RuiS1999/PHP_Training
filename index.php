@@ -11,12 +11,11 @@
         ?>
         <br>
         <?php
-            function printCircleArea($radius1, $radius2) {
-                echo $radius1 * $radius2 / 2;
-                echo '<br>';
+            function printTriArea($radius1, $radius2) {
+                return $radius1 * $radius2 / 2;
             }
-            printCircleArea(3, 5);
-            printCircleArea(5, 10);
+            $answer = printTriArea(1, 3);
+            echo $answer;
         ?>
         <br>
         <?php
